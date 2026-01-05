@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Pulugu — Data Scientist</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Compact Nav -->
+    <nav class="nav">
+        <a href="#" class="logo">Available for hire<span class="logo-dot"></span></a>
+        <div class="nav-center">
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="menu-toggle"><span></span><span></span></button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero - Dense Bento Grid -->
+    <section class="hero" id="hero">
+        <div class="hero-grid">
+            <!-- Main intro -->
+            <div class="cell cell-intro">
+                <span class="badge"><span class="pulse"></span> Open to Data Roles</span>
+                <h1>Arjun Reddy Pulugu</h1>
+                <p class="tagline">I build pipelines, train models, and craft dashboards and automate workflows — Open to Data Science and Analytics roles starting immediately.
+
+                </p>
+                <div class="intro-btns">
+                    <a href="#work" class="btn-primary">View Work <i class="fas fa-arrow-down"></i></a>
+                    <a href="mailto:arjun22.pulugu@gmail.com" class="btn-outline">Say Hello</a>
+                </div>
+            </div>
+
+            <!-- Photo -->
+            <div class="cell cell-photo">
+                <img src="photo.jpeg" alt="Arjun Reddy Pulugu">
+                <div class="photo-border"></div>
+            </div>
+
+            <!-- Stats row -->
+            <div class="cell cell-stat">
+                <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Years Exp</span>
+            </div>
+            <div class="cell cell-stat">
+                <span class="stat-num" data-target="150">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Students Taught & Mentored</span>
+            </div>
+            <div class="cell cell-stat">
+                <span class="stat-num" data-target="10">0</span><span class="stat-plus">M</span>
+                <span class="stat-label">Data Points Processed and Analyzed</span>
+            </div>
+
+            <!-- Current -->
+            <div class="cell cell-current">
+                <span class="cell-label">At Infosys</span>
+                <span class="current-role">Prevented 100+ network outages</span>
+                <span class="current-company">monthly</span>
+            </div>
+
+            <!-- Location -->
+            <div class="cell cell-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <span class="loc-city">Boston, MA (open to relocation)</span>
+                    <span class="loc-sub">Dec 2025 Grad</span>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="cell cell-edu">
+                <span class="edu-school">Northeastern University</span>
+                <span class="edu-degree">MS Data Analytics</span>
+                <span class="edu-gpa">3.95 GPA</span>
+            </div>
+
+            <!-- Tech marquee -->
+            <div class="cell cell-tech">
+                <div class="tech-scroll">
+                    <div class="tech-track">
+                        <span>Python</span><span>SQL</span><span>Statistical Analysis</span><span>Hypothesis Testing</span><span>AWS</span><span>Snowflake</span><span>Spark</span><span>Airflow</span><span>dbt</span><span>Tableau</span><span>Power BI</span><span>TensorFlow</span><span>XGBoost</span><span>LangChain</span>
+                        <span>Python</span><span>SQL</span><span>AWS</span><span>Snowflake</span><span>Spark</span><span>Airflow</span><span>dbt</span><span>Tableau</span><span>Power BI</span><span>TensorFlow</span><span>XGBoost</span><span>LangChain</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social links -->
+            <div class="cell cell-social">
+                <a href="https://www.linkedin.com/in/arjunpulugu" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Arjunreddypulugu" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:arjun22.pulugu@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <!-- Typing roles -->
+            <div class="cell cell-roles">
+                <span class="role-prefix">I build</span>
+                <span class="role-text"></span>
+                <span class="cursor">|</span>
+            </div>
+
+            <!-- Certifications -->
+            <div class="cell cell-certs">
+                <div class="cert"><i class="fab fa-aws"></i> Solutions Architect Associate</div>
+                <div class="cert"><i class="fab fa-aws"></i> Cloud Practitioner</div>
+            </div>
+
+            <div class="cell cell-certs">
+                <div class="cert"><i class="fas fa-project-diagram"></i> Apache Airflow 3 fundamentals</div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Experience - Timeline -->
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="exp-timeline">
+            <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div class="exp-date">2025</div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Data Scientist Intern</h3>
+                        <span class="exp-company">VDRS · Norwalk, CT</span>
+                    </div>
+                    <div class="exp-metrics">
+                        <div class="metric"><span>30%</span> faster queries</div>
+                        <div class="metric"><span>10K+</span> drawings automated</div>
+                        <div class="metric"><span>50%</span> time saved</div>
+                    </div>
+                    <div class="exp-tags">
+                        <span>Python</span><span>Azure</span><span>GPT-4</span><span>Power BI</span><span>SQL Server</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div class="exp-date">2024</div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Graduate Teaching Assistant</h3>
+                        <span class="exp-company">Northeastern University · Boston</span>
+                    </div>
+                    <div class="exp-metrics">
+                        <div class="metric"><span>150+</span> students taught</div>
+                    </div>
+                    <div class="exp-tags">
+                        <span>Python</span><span>R</span><span>PySpark</span><span>SQL</span><span>SQL</span><span>Databricks</span><span>Statistics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div class="exp-date">2021-23</div>
+                <div class="exp-content">
+                    <div class="exp-header">
+                        <h3>Data Scientist</h3>
+                        <span class="exp-company">Infosys · Hyderabad, India</span>
+                    </div>
+                    <div class="exp-metrics">
+                        <div class="metric"><span>40%</span> less downtime</div>
+                        <div class="metric"><span>100+</span> hrs saved/mo</div>
+                        <div class="metric"><span>30%</span> better planning</div>
+                    </div>
+                    <div class="exp-tags">
+                        <span>Python</span><span>ARIMA</span><span>Tableau</span><span>SQL</span><span>Prometheus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects - Dense Grid -->
+    <section class="projects" id="work">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <a href="https://github.com/Arjunreddypulugu/ab-testing-platform" target="_blank" class="project-card large">
+                <div class="project-visual">
+                    <div class="viz-bars">
+                        <div class="bar" style="--h:40%"></div>
+                        <div class="bar" style="--h:70%"></div>
+                        <div class="bar" style="--h:55%"></div>
+                        <div class="bar" style="--h:85%"></div>
+                        <div class="bar" style="--h:60%"></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Experimentation</span>
+                    <h3>A/B Testing Platform</h3>
+                    <p>Statistical framework with CUPED. 30% faster experiments.</p>
+                    <div class="project-tech"><span>Python</span><span>Statistics</span><span>Streamlit</span></div>
+                </div>
+                <i class="fas fa-arrow-up-right project-arrow"></i>
+            </a>
+
+            <a href="https://github.com/Arjunreddypulugu/credit-risk-modeling-web-app" target="_blank" class="project-card">
+                <div class="project-visual">
+                    <div class="viz-score">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" class="score-bg"/>
+                            <circle cx="50" cy="50" r="40" class="score-fill"/>
+                        </svg>
+                        <span>780</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">ML</span>
+                    <h3>Credit Risk Scoring</h3>
+                    <p>XGBoost + Optuna tuning</p>
+                    <div class="project-tech"><span>XGBoost</span><span>Streamlit</span></div>
+                </div>
+                <a href="https://credit-risk-modeling-web.streamlit.app/" target="_blank" class="live-badge" onclick="event.stopPropagation();">Live Demo</a>
+                <i class="fas fa-arrow-up-right project-arrow"></i>
+            </a>
+
+            <a href="https://github.com/Arjunreddypulugu/A-Modern-ELT-Pipeline-with-AWS-Snowflake-dbt-and-Terraform" target="_blank" class="project-card">
+                <div class="project-visual">
+                    <div class="viz-pipeline">
+                        <div class="pipe-node"><i class="fab fa-aws"></i></div>
+                        <div class="pipe-line"></div>
+                        <div class="pipe-node"><i class="fas fa-snowflake"></i></div>
+                        <div class="pipe-line"></div>
+                        <div class="pipe-node"><i class="fas fa-chart-bar"></i></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Data Eng</span>
+                    <h3>Modern ELT Pipeline</h3>
+                    <p>Terraform + dbt + Snowflake</p>
+                    <div class="project-tech"><span>dbt</span><span>Snowflake</span><span>AWS</span></div>
+                </div>
+                <i class="fas fa-arrow-up-right project-arrow"></i>
+            </a>
+
+            <a href="https://github.com/Arjunreddypulugu/ipeds-QA-llm" target="_blank" class="project-card">
+                <div class="project-visual">
+                    <div class="viz-chat">
+                        <div class="chat-msg user">Sales in Q3?</div>
+                        <div class="chat-msg ai">SELECT SUM...</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">GenAI</span>
+                    <h3>NL to SQL</h3>
+                    <p>GPT-4 + LangChain + RAG</p>
+                    <div class="project-tech"><span>LangChain</span><span>GPT-4</span></div>
+                </div>
+                <i class="fas fa-arrow-up-right project-arrow"></i>
+            </a>
+
+            <a href="https://github.com/Arjunreddypulugu/user-engagement-analytics" target="_blank" class="project-card">
+                <div class="project-visual">
+                    <div class="viz-cohort">
+                        <div class="cohort-row"><span style="--w:100%"></span></div>
+                        <div class="cohort-row"><span style="--w:75%"></span></div>
+                        <div class="cohort-row"><span style="--w:55%"></span></div>
+                        <div class="cohort-row"><span style="--w:40%"></span></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Analytics</span>
+                    <h3>User Engagement</h3>
+                    <p>1M+ events, 85% churn accuracy</p>
+                    <div class="project-tech"><span>XGBoost</span><span>Cohort</span></div>
+                </div>
+                <i class="fas fa-arrow-up-right project-arrow"></i>
+            </a>
+
+            <a href="https://github.com/Arjunreddypulugu/mlops-pipeline" target="_blank" class="project-card">
+                <div class="project-visual">
+                    <div class="viz-mlops">
+                        <i class="fab fa-docker"></i>
+                        <i class="fas fa-arrows-rotate spin"></i>
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">MLOps</span>
+                    <h3>CI/CD ML Pipeline</h3>
+                    <p>Docker + K8s + AWS</p>
+                    <div class="project-tech"><span>Docker</span><span>K8s</span></div>
+                </div>
+                <i class="fas fa-arrow-up-right project-arrow"></i>
+            </a>
+        </div>
+        <a href="https://github.com/Arjunreddypulugu" target="_blank" class="more-projects">
+            All projects on GitHub <i class="fas fa-arrow-right"></i>
+        </a>
+    </section>
+
+    <!-- Skills - Compact Grid -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-cell">
+                <div class="skill-header"><i class="fas fa-code"></i> Languages</div>
+                <div class="skill-items">
+                    <span class="skill-item" data-level="95">Python</span>
+                    <span class="skill-item" data-level="90">SQL</span>
+                    <span class="skill-item" data-level="70">R</span>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <div class="skill-header"><i class="fas fa-brain"></i> ML & AI</div>
+                <div class="skill-items">
+                    <span class="skill-item">Scikit-learn</span>
+                    <span class="skill-item">XGBoost</span>
+                    <span class="skill-item">TensorFlow</span>
+                    <span class="skill-item">LangChain</span>
+                    <span class="skill-item">NLP</span>
+                    <span class="skill-item">Time Series</span>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <div class="skill-header"><i class="fas fa-cloud"></i> Cloud & Data</div>
+                <div class="skill-items">
+                    <span class="skill-item">AWS</span>
+                    <span class="skill-item">Azure</span>
+                    <span class="skill-item">Snowflake</span>
+                    <span class="skill-item">Databricks</span>
+                    <span class="skill-item">Airflow</span>
+                    <span class="skill-item">Kafka</span>
+                    <span class="skill-item">Spark</span>
+                    <span class="skill-item">dbt</span>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <div class="skill-header"><i class="fas fa-chart-pie"></i> Visualization</div>
+                <div class="skill-items">
+                    <span class="skill-item">Tableau</span>
+                    <span class="skill-item">Power BI</span>
+                    <span class="skill-item">Looker</span>
+                    <span class="skill-item">Streamlit</span>
+                    <span class="skill-item">Plotly</span>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <div class="skill-header"><i class="fas fa-database"></i> Databases</div>
+                <div class="skill-items">
+                    <span class="skill-item">PostgreSQL</span>
+                    <span class="skill-item">SQL Server</span>
+                    <span class="skill-item">MongoDB</span>
+                    <span class="skill-item">Redis</span>
+                    <span class="skill-item">BigQuery</span>
+                </div>
+            </div>
+            <div class="skill-cell">
+                <div class="skill-header"><i class="fas fa-cog"></i> DevOps</div>
+                <div class="skill-items">
+                    <span class="skill-item">Docker</span>
+                    <span class="skill-item">Kubernetes</span>
+                    <span class="skill-item">Terraform</span>
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">CI/CD</span>
+                    <span class="skill-item">Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact - Dense -->
+    <section class="contact" id="contact">
+        <div class="contact-grid">
+            <div class="contact-main">
+                <h2>Let's Connect</h2>
+                <p>Looking for full-time roles in Data Science, Analytics, or ML Engineering starting immediately.</p>
+                <a href="mailto:arjun22.pulugu@gmail.com" class="contact-btn">
+                    <i class="fas fa-paper-plane"></i> Get in touch
+                </a>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:arjun22.pulugu@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>arjun22.pulugu@gmail.com</span>
+                </a>
+                <a href="tel:6173310120" class="contact-link">
+                    <i class="fas fa-phone"></i>
+                    <span>(617) 331-0120</span>
+                </a>
+                <a href="https://www.linkedin.com/in/arjunpulugu" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>linkedin.com/in/arjunpulugu</span>
+                </a>
+                <a href="https://github.com/Arjunreddypulugu" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/Arjunreddypulugu</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>© 2025 Arjun Pulugu</span>
+        <span>Built with ☕ and curiosity</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
